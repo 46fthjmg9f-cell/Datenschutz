@@ -1,246 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Datenschutzerklärung - Flaggen App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Datenschutz – Flaggenbande</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    :root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; color: #1d1d1f; background: #f5f5f7; }
+    body { margin: 0; }
+    main { max-width: 880px; margin: 0 auto; padding: 36px 20px 64px; }
+    article { background: #fff; border-radius: 16px; padding: clamp(24px, 6vw, 52px); box-shadow: 0 1px 4px #0002; }
+    h1 { margin-top: 0; font-size: clamp(2rem, 7vw, 3.3rem); line-height: 1.05; }
+    h2 { margin-top: 2rem; }
+    h3 { margin-top: 1.6rem; }
+    a { color: #0066cc; }
+    .meta, .note { color: #5f5f65; }
+    .language { border-top: 1px solid #d2d2d7; margin-top: 3rem; padding-top: 2rem; }
+    @media (prefers-color-scheme: dark) {
+      :root { color: #f5f5f7; background: #111; }
+      article { background: #1c1c1e; }
+      .meta, .note { color: #aeaeb2; }
+      a { color: #64a8ff; }
+      .language { border-color: #3a3a3c; }
     }
-    
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
-      line-height: 1.6;
-      color: #1d1d1f;
-      background-color: #f5f5f7;
-    }
-    
-    .container {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    
-    header {
-      text-align: center;
-      margin-bottom: 60px;
-      padding: 40px 0;
-    }
-    
-    header h1 {
-      font-size: 3.5rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-      letter-spacing: -0.02em;
-    }
-    
-    header p {
-      font-size: 1.2rem;
-      color: #666;
-    }
-    
-    main {
-      background: white;
-      border-radius: 12px;
-      padding: 60px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-      line-height: 1.8;
-    }
-    
-    main section {
-      margin-bottom: 50px;
-    }
-    
-    main section:last-child {
-      margin-bottom: 0;
-    }
-    
-    h2 {
-      font-size: 1.75rem;
-      font-weight: 600;
-      margin-bottom: 20px;
-      margin-top: 40px;
-      letter-spacing: -0.01em;
-    }
-    
-    h2:first-of-type {
-      margin-top: 0;
-    }
-    
-    p {
-      font-size: 1rem;
-      margin-bottom: 15px;
-      color: #424245;
-    }
-    
-    ul, ol {
-      margin: 20px 0 20px 40px;
-      color: #424245;
-    }
-    
-    li {
-      margin-bottom: 10px;
-    }
-    
-    strong {
-      color: #1d1d1f;
-    }
-    
-    footer {
-      text-align: center;
-      margin-top: 60px;
-      padding-top: 40px;
-      border-top: 1px solid #e5e5e7;
-      color: #666;
-      font-size: 0.95rem;
-    }
-    
-    .contact {
-      background: #f5f5f7;
-      padding: 30px;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-    
-    .contact p {
-      margin-bottom: 8px;
-    }
-    
-    a {
-      color: #0071e3;
-      text-decoration: none;
-    }
-    
-    a:hover {
-      text-decoration: underline;
-    }
-    
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.5rem;
-      }
-      
-      main {
-        padding: 40px 25px;
-      }
-      
-      h2 {
-        font-size: 1.4rem;
-      }
-    }
-  </style>
+  
+    nav { margin: 0 0 1.5rem; }
+</style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Datenschutzerklärung</h1>
-      <p>Flaggen App</p>
-    </header>
-    
-    <main>
-      <section>
-        <h2>1. Allgemeine Informationen</h2>
-        <p>
-          Diese Datenschutzerklärung gilt für die Flaggen App (nachfolgend "App" genannt). 
-          Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst und halten uns an alle geltenden 
-          Datenschutzgesetze, insbesondere die Datenschutz-Grundverordnung (DSGVO).
-        </p>
-      </section>
-      
-      <section>
-        <h2>2. Erhebung und Verarbeitung von Daten</h2>
-        <p>
-          <strong>Keine Datenerfassung:</strong> Die Flaggen App erhebt, speichert oder verarbeitet 
-          <strong>keine personenbezogenen Daten</strong> der Nutzer.
-        </p>
-        <ul>
-          <li>Es werden keine Nutzerkonten angelegt</li>
-          <li>Es werden keine E-Mail-Adressen erfasst</li>
-          <li>Es werden keine Standortdaten gesammelt</li>
-          <li>Es werden keine Nutzungsdaten verarbeitet</li>
-          <li>Es werden keine Geräte-Identifikationen gespeichert</li>
-        </ul>
-      </section>
-      
-      <section>
-        <h2>3. Datenweitergabe an Dritte</h2>
-        <p>
-          Wir geben <strong>keine personenbezogenen Informationen an Dritte</strong> weiter. 
-          Da die App keine Daten erfasst, können auch keine Daten an externe Partner, 
-          Analyse-Tools oder Werbenetzwerke übermittelt werden.
-        </p>
-      </section>
-      
-      <section>
-        <h2>4. Cookies und Tracking</h2>
-        <p>
-          Die App verwendet <strong>keine Cookies</strong> und implementiert <strong>kein Tracking</strong>. 
-          Ihre Nutzung der App wird nicht überwacht oder nachverfolgt.
-        </p>
-      </section>
-      
-      <section>
-        <h2>5. Offline-Funktionalität</h2>
-        <p>
-          Die Flaggen App funktioniert vollständig offline. Es sind keine Verbindungen zu externen Servern 
-          erforderlich, und Ihre Aktivitäten werden nicht an externe Systeme übermittelt.
-        </p>
-      </section>
-      
-      <section>
-        <h2>6. Sicherheit</h2>
-        <p>
-          Trotz der Tatsache, dass die App keine Daten erhebt oder speichert, setzen wir auf die höchsten 
-          Sicherheitsstandards. Alle Funktionen sind nach modernen Sicherheitsprinzipien implementiert.
-        </p>
-      </section>
-      
-      <section>
-        <h2>7. Ihre Rechte</h2>
-        <p>
-          Gemäß DSGVO haben Sie folgende Rechte:
-        </p>
-        <ul>
-          <li>Recht auf Auskunft</li>
-          <li>Recht auf Berichtigung</li>
-          <li>Recht auf Löschung</li>
-          <li>Recht auf Einschränkung der Verarbeitung</li>
-          <li>Recht auf Datenportabilität</li>
-        </ul>
-        <p>
-          Da keine Daten erhoben werden, können diese Rechte in vollständiger Form wahrgenommen werden.
-        </p>
-      </section>
-      
-      <section>
-        <h2>8. Änderungen dieser Datenschutzerklärung</h2>
-        <p>
-          Sollte sich die Funktionalität der App in zukünftigen Versionen ändern und Daten erhoben werden, 
-          wird diese Datenschutzerklärung umgehend angepasst und aktualisiert. Benutzer werden von 
-          Änderungen benachrichtigt.
-        </p>
-      </section>
-      
-      <section>
-        <h2>9. Kontakt</h2>
-        <div class="contact">
-          <p><strong>Verantwortlicher:</strong></p>
-          <p>Philipp Rämer</p>
-          <p><strong>E-Mail:</strong> praemer@gmx.de</p>
-          <p><a href="mailto:praemer@gmx.de">praemer@gmx.de kontaktieren</a></p>
-          <p style="margin-top: 20px; font-size: 0.9rem; color: #666;">
-            <strong>Letzte Aktualisierung:</strong> 03. Juli 2026
-          </p>
-        </div>
-      </section>
-    </main>
-    
-    <footer>
-      <p>&copy; 2026 Flaggen App. Alle Rechte vorbehalten.</p>
-    </footer>
-  </div>
+<main>
+<article>
+  <nav aria-label="Seitennavigation"><a href="support.html">Support</a> · <a href="#english" lang="en">English</a></nav>
+  <h1>Datenschutz bei Flaggenbande</h1>
+  <p class="meta">Version 1.2 (Build 116) · Stand: 19. September 2026</p>
+
+  <h2>1. Verantwortlicher und Kontakt</h2>
+  <p>Verantwortlich ist Philipp Rämer, <span>Holzhofstraße 14, 55116 Mainz</span>. Datenschutzkontakt: <a href="mailto:praemer@gmx.de">praemer@gmx.de</a>. Technische Hilfe findest du auf der <a href="support.html">Supportseite</a>.</p>
+
+  <h2>2. Daten auf deinem Gerät und bei Apple</h2>
+  <p>Die App speichert Lernprofile, Fortschritt, Einstellungen, Ergebnisse, Bestwerte, Erfolge und Verlauf auf deinem Gerät. Bei aktivierten Online-Funktionen und verbundenem Game Center werden Lernstände über Apple iCloud/CloudKit gesichert und synchronisiert. Dafür werden App-/Game-Center-Kennungen, Anzeigenamen und Spielstatistiken verarbeitet. Es wird kein separates Flaggenbande-Konto mit E-Mail-Adresse oder Passwort angelegt.</p>
+  <p>Eine zufällige Installationskennung dient den gerätebezogenen Freikontingenten und deren Integritätsschutz. Sie liegt im iOS-Schlüsselbund, kann einen lokalen Reset und eine gewöhnliche Neuinstallation auf demselben Gerät überdauern und wird nicht durch eine Backup-Wiederherstellung auf ein anderes Gerät übertragen. Bei der Cloud-Synchronisierung können zugehörige Kontingentdaten einschließlich dieser Kennung verarbeitet werden.</p>
+  <p>Online-Funktionen sind zunächst eingeschaltet. Die App kann deshalb schon beim Start eine Game-Center-Anmeldung versuchen und bei bestehender Verbindung synchronisieren. Du kannst die Online-Funktionen in den Optionen ausschalten; die Offline-Lernmodi bleiben nutzbar.</p>
+
+  <h2>3. Was andere sehen können</h2>
+  <p>Öffentliche Profile und Bestenlisten zeigen den Anzeigenamen beziehungsweise Game-Center-Spitznamen sowie Lern- und Spielstatistiken. Dazu gehören Länder-/Hauptstadt-Lernstufen, Fortschrittsverläufe, Erfolge, Bestwerte und Daily-Ergebnisse. Diese Daten werden in der öffentlichen CloudKit-Datenbank gespeichert. Neue vollständige Lernstandsicherungen werden dagegen in der privaten CloudKit-Datenbank gespeichert.</p>
+  <p>Für Daily-Versuche werden auch Datum, Modus, Versuchszahl, Ergebnis, Antworten und Zeitangaben zur Prüfung des Ablaufs gespeichert. Ein automatisierter Wartungsdienst wertet diese CloudKit-Daten für Tagesgewinner („Boss“), Pokale und Ranglisten aus. Auch Gewinner- und Pokalhistorien sind öffentliche Spieldaten. Die pseudonyme Game-Center-Spielerkennung wird zur Kontozuordnung im öffentlichen Profil-Datensatz gespeichert, in den Bestenlisten aber nicht angezeigt.</p>
+  <p>App-Freunde sind auf deinem Gerät gespeicherte Verweise auf öffentliche Profile. Du kannst sie über ein Profil oder einen eindeutig zuordenbaren Freundescode hinzufügen. Es entstehen keine gegenseitigen Freundschaftsbeziehungen; die Liste wird nicht als Freundschaftsliste veröffentlicht. Ein Abgleich mit Game-Center-Freundschaften ist in dieser Version nicht aktiv. Ein sichtbarer Name ist kein Nachweis einer verifizierten fremden Identität.</p>
+
+  <h2>4. Zwecke und Dienste</h2>
+  <p>Die Daten dienen Lernen, Synchronisierung, Online-Vergleichen, Daily-Spielabläufen sowie dem Schutz vor Datenverlust und missbräuchlichen Ergebnissen. Die App verwendet keine Werbe- oder Analyse-SDKs und kein werbliches Tracking.</p>
+  <p>Apple stellt Game Center, iCloud/CloudKit und die Kaufabwicklung über StoreKit bereit. Flaggenbande erhält keine Kreditkarten- oder Bankdaten. Lern-Erinnerungen und Spielmitteilungen können über iOS verwaltet werden. Weitere Informationen findest du in Apples <a href="https://www.apple.com/legal/privacy/data/de/game-center/">Game-Center-Datenschutzhinweisen</a> und <a href="https://www.apple.com/legal/privacy/de-ww/">Datenschutzrichtlinie</a>.</p>
+  <p>Flaggenbilder und Kartendaten sind in der App enthalten. Erst das Öffnen eines externen Quellenlinks stellt eine Verbindung zur jeweiligen Website her; dabei erhält deren Anbieter übliche Verbindungsdaten. Die App sendet dabei keine Lernstatistik.</p>
+  <p>Für die Bereitstellung der angeforderten App-Funktionen, Synchronisierung, Online-Spielabläufe, Kaufabwicklung und zugehörigen Support gilt Art. 6 Abs. 1 Buchst. b DSGVO. Die Bearbeitung gesetzlicher Datenschutzansprüche beruht auf Art. 6 Abs. 1 Buchst. c DSGVO. Integritätsschutz, Missbrauchsprävention, Fehlerbehebung und der sichere Betrieb dieser Informationsseite beruhen auf Art. 6 Abs. 1 Buchst. f DSGVO; die berechtigten Interessen sind verlässliche Spielstände, nachvollziehbare Ergebnisse und ein sicher erreichbarer Dienst. Weitere Informationen zu diesen Grundlagen enthält <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32016R0679">Art. 6 DSGVO</a>.</p>
+
+  <h2>5. Speicherung, Ausschalten und Löschen</h2>
+  <p>„Alle lokalen Daten zurücksetzen“ entfernt den lokalen Fortschritt nach Bestätigung. Die Cloud-Sicherung bleibt erhalten und wird nicht durch den leeren Stand überschrieben. Ausschalten der Online-Funktionen oder Entfernen der App löscht bestehende Cloud-Daten ebenfalls nicht. Eine Cloud-/Kontolöschung direkt in der App ist in dieser Version nicht verfügbar. Löschanfragen können an den Datenschutzkontakt gerichtet werden.</p>
+  <p>Für Cloud-Spielstände und Ergebnisnachweise gibt es in dieser Version kein automatisches Ablaufdatum. Sie bleiben für Synchronisierung, Wiederherstellung und historische Vergleiche gespeichert, bis eine Löschanfrage geprüft und bearbeitet wird oder die Verarbeitung aus einem anderen Grund endet. Für eine Löschanfrage muss die Zuordnung zum betroffenen Profil sicher geklärt werden. Support- und Datenschutzanfragen werden einschließlich der mitgeteilten Kontaktdaten, Nachrichten und Anhänge für ihre Bearbeitung sowie erforderliche Rückfragen und Nachweispflichten aufbewahrt; die Dauer richtet sich nach dem jeweiligen Anliegen und gegebenenfalls gesetzlichen Aufbewahrungspflichten.</p>
+
+  <h2>6. Diese Website und Support</h2>
+  <p>Diese Website nutzt GitHub Pages ohne eigene Analyse- oder Werbeskripte. GitHub speichert beim Besuch die IP-Adresse für Sicherheitszwecke, auch ohne Anmeldung. Siehe <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub Pages: Datenerhebung</a> und <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub-Datenschutz</a>.</p>
+  <p>E-Mail-Anfragen werden vom Verantwortlichen über die angegebene Kontaktadresse bearbeitet. An der Übermittlung und Speicherung sind die für die Kommunikation verwendeten E-Mail-Dienste beteiligt. Öffentlich eingereichte GitHub Issues sind auch für andere sichtbar; verwende für persönliche Angaben E-Mail. Geschlossene Issues werden nicht automatisch gelöscht.</p>
+  <p>Bei Apple und GitHub kann eine Verarbeitung auch außerhalb des Europäischen Wirtschaftsraums, insbesondere in den USA, stattfinden. Apple nennt für Personen im EWR Apple Distribution International Limited in Irland und für internationale Übermittlungen Standardvertragsklauseln. GitHub nennt Standardvertragsklauseln und für erfasste Übermittlungen seine Teilnahme am EU-US Data Privacy Framework. Einzelheiten, Empfänger und die jeweiligen Schutzmechanismen stehen in der <a href="https://www.apple.com/legal/privacy/de-ww/">Apple-Datenschutzrichtlinie</a> und der <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement#international-data-transfers">GitHub-Datenschutzerklärung</a>. Ein Exemplar der von Apple verwendeten Klauseln kann über <a href="https://www.apple.com/de/privacy/contact/">Apples Datenschutzkontakt</a> angefragt werden.</p>
+
+  <h2>7. Deine Rechte</h2>
+  <p>Du kannst unter den gesetzlichen Voraussetzungen Auskunft, Berichtigung, Löschung, Einschränkung und Datenübertragbarkeit verlangen sowie einer Verarbeitung aufgrund berechtigter Interessen widersprechen. Wende dich dafür an den Datenschutzkontakt. Du kannst dich außerdem bei einer Datenschutzaufsichtsbehörde beschweren, insbesondere an deinem Aufenthaltsort, Arbeitsplatz oder am Ort eines vermuteten Verstoßes.</p>
+
+  <section class="language" lang="en" id="english">
+    <h2>Flaggenbande Privacy Notice</h2>
+    <p class="meta">Version 1.2 (Build 116) · Updated 19 September 2026</p>
+
+    <h3>1. Controller and contact</h3>
+    <p>The controller is Philipp Rämer, <span>Holzhofstraße 14, 55116 Mainz</span>. Privacy contact: <a href="mailto:praemer@gmx.de">praemer@gmx.de</a>. Technical help is available on the <a href="support.html">support page</a>.</p>
+
+    <h3>2. Data on your device and with Apple</h3>
+    <p>The app stores learning profiles, progress, settings, results, records, achievements and history on your device. With online features enabled and Game Center connected, learning data is backed up and synchronized through Apple iCloud/CloudKit. This uses app/Game Center identifiers, display names and gameplay statistics. No separate Flaggenbande account with an email address or password is created.</p>
+    <p>A random installation identifier supports device-based free quotas and their integrity checks. It is stored in the iOS Keychain, may survive a local reset or ordinary reinstall on the same device, and is not transferred to another device through backup restoration. Related quota data, including this identifier, may be processed during cloud synchronization.</p>
+    <p>Online features are initially enabled, so the app may attempt Game Center sign-in when it starts and synchronize when connected. You can disable online features in the options; offline learning remains available.</p>
+
+    <h3>3. Public information</h3>
+    <p>Public profiles and leaderboards show a display name or Game Center nickname and learning/game statistics, including country/capital mastery levels, progress history, achievements, records and Daily results. They are stored in the public CloudKit database. New complete progress backups are stored in the private CloudKit database.</p>
+    <p>Daily attempts also store their date, mode, attempt number, result, answers and timing evidence. An automated maintenance service evaluates this CloudKit data for daily winners (“Boss”), trophies and rankings. Winner and trophy histories are public gameplay data. The pseudonymous Game Center player identifier is stored in the public profile record for account binding but is not displayed in leaderboards.</p>
+    <p>App friends are links to public profiles saved on your device, added from a profile or an unambiguously resolved friend code. They do not establish mutual friendships, and this list is not published as a friendship list. Game Center friendship matching is inactive in this version. A displayed name is not proof of another player's verified identity.</p>
+
+    <h3>4. Purposes and services</h3>
+    <p>Data supports learning, synchronization, online comparisons, Daily gameplay, and protection against data loss or invalid results. The app uses no advertising or analytics SDKs and no advertising tracking.</p>
+    <p>Apple provides Game Center, iCloud/CloudKit and purchases through StoreKit. Flaggenbande receives no credit card or bank details. Learning reminders and game notifications can be managed through iOS. See Apple's <a href="https://www.apple.com/legal/privacy/data/en/game-center/">Game Center privacy notice</a> and <a href="https://www.apple.com/legal/privacy/en-ww/">Privacy Policy</a>.</p>
+    <p>Flags and map data are bundled with the app. Opening an external source link connects to that website, whose operator receives ordinary connection data. The app does not send learning statistics with that visit.</p>
+    <p>GDPR Article 6(1)(b) applies to providing requested app functions, synchronization, online gameplay, purchases and related support. Article 6(1)(c) applies to handling statutory privacy requests. Article 6(1)(f) applies to integrity protection, abuse prevention, troubleshooting and secure operation of this information website; the legitimate interests are reliable progress, traceable results and a securely accessible service. See <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Article 6</a>.</p>
+
+    <h3>5. Retention, disabling and deletion</h3>
+    <p>“Reset all local data” removes local progress after confirmation. The cloud backup remains and is not overwritten with empty data. Disabling online features or removing the app also does not delete existing cloud data. In-app cloud/account deletion is unavailable in this version. Send deletion requests to the privacy contact.</p>
+    <p>Cloud progress and result evidence have no automatic expiry in this version. They remain stored for synchronization, restoration and historical comparisons until a deletion request is checked and processed or processing ends for another reason. A deletion request requires a secure connection to the affected profile. Support and privacy requests, including supplied contact details, messages and attachments, are retained for handling the request, necessary follow-up and evidentiary obligations. Retention depends on the specific matter and any applicable legal obligations.</p>
+
+    <h3>6. Website and support</h3>
+    <p>This website uses GitHub Pages without its own analytics or advertising scripts. GitHub logs visitors' IP addresses for security, including visits without sign-in. See <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub Pages data collection</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's Privacy Statement</a>.</p>
+    <p>The controller handles email requests through the listed contact address. The email services used for the communication participate in its transmission and storage. Public GitHub Issues are visible to others; use email for personal information. Closing an issue does not automatically delete it.</p>
+    <p>Apple and GitHub may process data outside the European Economic Area, including in the United States. Apple identifies Apple Distribution International Limited in Ireland for people in the EEA and uses Standard Contractual Clauses for international transfers. GitHub identifies Standard Contractual Clauses and its participation in the EU-US Data Privacy Framework for covered transfers. Details, recipients and safeguards are provided in <a href="https://www.apple.com/legal/privacy/en-ww/">Apple’s Privacy Policy</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement#international-data-transfers">GitHub’s Privacy Statement</a>. A copy of Apple’s clauses can be requested through <a href="https://www.apple.com/privacy/contact/">Apple’s privacy contact</a>.</p>
+
+    <h3>7. Your rights</h3>
+    <p>Subject to legal conditions, you can request access, rectification, erasure, restriction and portability, and object to processing based on legitimate interests. Contact the privacy address to exercise these rights. You can also complain to a data protection authority, particularly where you live, work or believe an infringement occurred.</p>
+  </section>
+</article>
+</main>
 </body>
 </html>
